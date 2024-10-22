@@ -1,3 +1,12 @@
+document.getElementById('location').addEventListener('change', function() {
+    const selectedValue = this.value;
+    if (selectedValue === '') {
+        alert('Por favor, selecione um local.');
+    } else {
+        console.log('Local selecionado:', selectedValue);
+    }
+});
+
 document.addEventListener('DOMContentLoaded', () => {
     // Referência ao formulário e seus campos
     const form = document.querySelector('form');
