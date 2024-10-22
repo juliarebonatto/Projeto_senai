@@ -1,3 +1,11 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<title>Sangue com Propósito    </title>
+        <script src="https://cdn.tailwindcss.com"></script>
+	</head>
+	<body>
 <section id="schedule-donation">
     <div class="container mx-auto px-4 md:px-6">
       <div class="max-w-3xl mx-auto space-y-6">
@@ -50,22 +58,9 @@
               />
             </div>
             <div>
-              <label
-                class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
-                for="location"
-              >
-                Local de Doação
-              </label>
-              <option value="">Selecione um local</option>
-              <option value="local1">Local 1</option>
-              <option value="local2">Local 2</option>
-              <option value="local3">Local 3</option>
-              <select
-                aria-hidden="true"
-                tabindex="-1"
-                style="position: absolute; border: 0px; width: 1px; height: 1px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; overflow-wrap: normal;"
-              >
-                <option value=""></option>
+              <label class="text-sm font-medium leading-none" for="location">Local de Doação</label>
+              <select id="location" class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm placeholder:text-muted-foreground focus-visible:outline-none">
+                  <option value="">Selecione um local</option>
               </select>
             </div>
           </div>
@@ -87,3 +82,6 @@
       </div>
     </div>
   </section>
+</body>
+<script src="/public/js/agendamento/index.js"></script>
+</html>
